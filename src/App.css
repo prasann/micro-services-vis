@@ -1,5 +1,13 @@
-.main-app {
+.container{
+    display: flex;
     height: 800px;
-    width: 1024px;
-    background: yellowgreen;
+    width: 100%;
+}
+.main-app {
+    flex-basis: 80%;
+    background: azure;
+}
+.desc{
+    flex-basis: 20%;
+    background: blanchedalmond;
 }

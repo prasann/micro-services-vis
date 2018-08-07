@@ -3,11 +3,14 @@ import { DataSet, Network } from 'vis';
 import './App.css';
 
 const nodes = new DataSet([
-  { id: 1, label: 'Node 1', shape: 'circle' },
-  { id: 2, label: 'Node 2', shape: 'circle' },
-  { id: 3, label: 'Node 3', shape: 'circle' },
-  { id: 4, label: 'Node 4', shape: 'circle' },
-  { id: 5, label: 'Node 5', shape: 'circle' }
+  { id: 1, label: 'Node 1', shape: 'circle', color: '#0078bf' },
+  { id: 2, label: 'Node 2', shape: 'circle', color: '#00aa5b' },
+  { id: 3, label: 'Node 3', shape: 'circle', color: '#b51b58' },
+  { id: 4, label: 'Node 4', shape: 'circle', color: '#702269' },
+  { id: 5, label: 'Node 5', shape: 'circle', color: '#5f3c25' },
+  { id: 6, label: 'Node 6', shape: 'circle', color: '#ed312f' },
+  { id: 7, label: 'Node 7', shape: 'circle', color: '#f58a33' },
+  { id: 8, label: 'Node 8', shape: 'circle', color: '#00bccd' }
 ]);
 
 // create an array with edges
@@ -15,7 +18,16 @@ const edges = new DataSet([
   { from: 1, to: 3 },
   { from: 1, to: 2 },
   { from: 2, to: 4 },
-  { from: 2, to: 5 }
+  { from: 2, to: 5 },
+  { from: 2, to: 5 },
+  { from: 2, to: 5 },
+  { from: 2, to: 1 },
+  { from: 2, to: 1 },
+  { from: 2, to: 6 },
+  { from: 2, to: 7 },
+  { from: 2, to: 8 },
+  { from: 1, to: 7 },
+  { from: 5, to: 8 },
 ]);
 
 const data = {
@@ -24,98 +36,45 @@ const data = {
 };
 
 const options = {
-  edges:{
+  autoResize: true,
+  height: '100%',
+  width: '100%',
+  nodes: {
+    font: {
+      color: 'white',
+      size: 18
+    }
+  },
+  edges: {
     arrows: {
-      to:     {enabled: false, scaleFactor:1, type:'arrow'},
-      middle: {enabled: false, scaleFactor:1, type:'arrow'},
-      from:   {enabled: false, scaleFactor:1, type:'arrow'}
+      to: { enabled: false, scaleFactor: 1, type: 'arrow' },
+      middle: { enabled: false, scaleFactor: 1, type: 'arrow' },
+      from: { enabled: false, scaleFactor: 1, type: 'arrow' }
     },
     arrowStrikethrough: true,
     chosen: true,
-    color: {
-      color:'red',
-      highlight:'#848484',
-      hover: '#848484',
-      opacity:1.0 
-    },
-    dashes: false,
-    font: {
-      color: '#343434',
-      size: 14, // px
-      face: 'arial',
-      background: 'none',
-      strokeWidth: 2, // px
-      strokeColor: '#ffffff',
-      align: 'horizontal',
-      multi: false,
-      vadjust: 0,
-      bold: {
-        color: '#343434',
-        size: 14, // px
-        face: 'arial',
-        vadjust: 0,
-        mod: 'bold'
-      },
-      ital: {
-        color: '#343434',
-        size: 14, // px
-        face: 'arial',
-        vadjust: 0,
-        mod: 'italic',
-      },
-      boldital: {
-        color: '#343434',
-        size: 14, // px
-        face: 'arial',
-        vadjust: 0,
-        mod: 'bold italic'
-      },
-      mono: {
-        color: '#343434',
-        size: 15, // px
-        face: 'courier new',
-        vadjust: 2,
-        mod: ''
-      }
-    },
-    hoverWidth: 1.5,
-    label: undefined,
-    labelHighlightBold: true,
-    length: undefined,
-    scaling:{
-      min: 1,
-      max: 15,
-      label: {
-        enabled: true,
-        min: 14,
-        max: 30,
-        maxVisible: 30,
-        drawThreshold: 5
-      },
-      customScalingFunction: function (min,max,total,value) {
-        if (max === min) {
-          return 0.5;
-        }
-        else {
-          var scale = 1 / (max - min);
-          return Math.max(0,(value - min)*scale);
-        }
-      }
-    },
-    selectionWidth: 1,
-    selfReferenceSize:20,
-    smooth: {
-      enabled: true,
-      type: "dynamic",
-      roundness: 0.5
-    },
-    title:undefined,
-    value: undefined,
-    width: 1,
-    widthConstraint: false
   },
-  manipulation: {
-    enabled: true
+  physics: {
+    enabled: true,
+    repulsion: {
+      centralGravity: 0.2,
+      springLength: 200,
+      springConstant: 0.05,
+      nodeDistance: 100,
+      damping: 0.09
+    },
+    maxVelocity: 50,
+    minVelocity: 1,
+    solver: 'repulsion',
+    stabilization: {
+      enabled: true,
+      iterations: 1000,
+      updateInterval: 100,
+      onlyDynamicEdges: false,
+      fit: true
+    },
+    timestep: 0.5,
+    adaptiveTimestep: true
   }
 };
 
@@ -125,18 +84,22 @@ class App extends Component {
     super();
     this.appRef = createRef();
     this.network = {};
+    this.state = { description: 'Some Long' };
   }
 
   componentDidMount() {
     this.network = new Network(this.appRef.current, data, options);
     this.network.on('click', (params) => {
-      console.log(params.nodes);
+      this.setState({ description: `${nodes.get(params.nodes[0]).label} is clicked` })
     });
   }
 
   render() {
     return (
-      <div className="main-app" ref={this.appRef} />
+      <div className="container" >
+        <div className="main-app" ref={this.appRef} />
+        <div className="desc" >{this.state.description}</div >
+      </div >
     );
   }
 }
