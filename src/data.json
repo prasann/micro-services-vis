@@ -5,10 +5,10 @@
       "label": "SA",
       "meta": {
         "name": "Service A",
-        "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "team": "Team A",
+        "techStack": "Java, Kotlin",
+        "gitRepo": "http://github.com",
+        "externalSystems": ["ESA", "ESB"]
       }
     },
     {
@@ -17,9 +17,9 @@
       "meta": {
         "name": "Service B",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -28,9 +28,9 @@
       "meta": {
         "name": "Service C",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -39,9 +39,9 @@
       "meta": {
         "name": "Service D",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -50,9 +50,9 @@
       "meta": {
         "name": "Service E",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -61,9 +61,9 @@
       "meta": {
         "name": "Service F",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -72,9 +72,9 @@
       "meta": {
         "name": "Service G",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -83,9 +83,9 @@
       "meta": {
         "name": "Service H",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -94,9 +94,9 @@
       "meta": {
         "name": "Service I",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -105,9 +105,9 @@
       "meta": {
         "name": "Service J",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -116,9 +116,9 @@
       "meta": {
         "name": "Service K",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -127,9 +127,9 @@
       "meta": {
         "name": "Service L",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -138,9 +138,9 @@
       "meta": {
         "name": "Service M",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -149,9 +149,9 @@
       "meta": {
         "name": "Service N",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -160,9 +160,9 @@
       "meta": {
         "name": "Service O",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -171,9 +171,9 @@
       "meta": {
         "name": "Service P",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -182,9 +182,9 @@
       "meta": {
         "name": "Service Q",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -193,9 +193,9 @@
       "meta": {
         "name": "Service R",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -204,9 +204,9 @@
       "meta": {
         "name": "Service S",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     },
     {
@@ -215,9 +215,9 @@
       "meta": {
         "name": "Service T",
         "team": "",
-        "tech-stack": "",
-        "git-repo": "",
-        "external-systems": []
+        "techStack": "",
+        "gitRepo": "",
+        "externalSystems": []
       }
     }
   ],
