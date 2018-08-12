@@ -323,7 +323,7 @@
     },
     {
       "consumer": 1,
-      "provider": 10  ,
+      "provider": 10,
       "meta": {
         "path": "/api/path",
         "method": "GET",
@@ -422,7 +422,7 @@
     },
     {
       "consumer": 11,
-      "provider": 20  ,
+      "provider": 20,
       "meta": {
         "path": "/api/path",
         "method": "GET",
@@ -431,7 +431,7 @@
     },
     {
       "consumer": 10,
-      "provider": 20  ,
+      "provider": 20,
       "meta": {
         "path": "/api/path",
         "method": "GET",

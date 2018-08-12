@@ -7,7 +7,6 @@ import networkOptions from './networkOptions';
 import './App.css';
 
 class App extends Component {
-
   constructor() {
     super();
     this.appRef = createRef();
@@ -17,31 +16,29 @@ class App extends Component {
   }
 
   selectedService(id) {
-    return dataFromFile.services.find((service) => {
-      return service.id === id
+    return dataFromFile.services.find(service => {
+      return service.id === id;
     });
   }
 
   componentDidMount() {
     const viewData = transform(dataFromFile);
     this.network = new Network(this.appRef.current, viewData, networkOptions);
-    this.network.on('click', (params) => {
-      this.setState({ service: this.selectedService(params.nodes[0]) })
+    this.network.on('click', params => {
+      this.setState({ service: this.selectedService(params.nodes[0]) });
     });
   }
 
-
   render() {
     return (
-      <div className="container" >
+      <div className="container">
         <div className="main-app" ref={this.appRef} />
-        <div className="desc" >
+        <div className="desc">
           <Description service={this.state.service} />
-        </div >
-      </div >
+        </div>
+      </div>
     );
   }
 }
 
 export default App;
-

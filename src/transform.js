@@ -1,12 +1,14 @@
-import { DataSet } from "vis";
+import { DataSet } from 'vis';
 
-const transform = (data) => {
+const transform = data => {
   const result = {};
   const services = data.services.map(service => ({
-    id: service.id, label: service.label
+    id: service.id,
+    label: service.label
   }));
   const integrationPoints = data.contracts.map(contract => ({
-    from: contract.consumer, to: contract.provider
+    from: contract.consumer,
+    to: contract.provider
   }));
   result.nodes = new DataSet(services);
   result.edges = new DataSet(integrationPoints);

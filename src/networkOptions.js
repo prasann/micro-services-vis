@@ -4,7 +4,7 @@ const options = {
   width: '100%',
   nodes: {
     shape: 'dot',
-    size:30,
+    size: 30,
     font: {
       color: 'black',
       size: 18
@@ -17,7 +17,7 @@ const options = {
       from: { enabled: false, scaleFactor: 1, type: 'arrow' }
     },
     arrowStrikethrough: true,
-    chosen: true,
+    chosen: true
   },
   physics: {
     enabled: true,
@@ -42,6 +42,5 @@ const options = {
     adaptiveTimestep: true
   }
 };
-
 
 export default options;

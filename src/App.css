@@ -1,11 +1,11 @@
-.container{
-    display: flex;
-    height: 800px;
-    width: 100%;
+.container {
+  display: flex;
+  height: 800px;
+  width: 100%;
 }
 .main-app {
-    flex-basis: 75%;
+  flex-basis: 75%;
 }
-.desc{
-    flex-basis: 25%;
+.desc {
+  flex-basis: 25%;
 }
