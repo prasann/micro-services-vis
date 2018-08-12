@@ -4,10 +4,8 @@
     width: 100%;
 }
 .main-app {
-    flex-basis: 80%;
-    background: azure;
+    flex-basis: 75%;
 }
 .desc{
-    flex-basis: 20%;
-    background: blanchedalmond;
+    flex-basis: 25%;
 }

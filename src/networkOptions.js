@@ -3,9 +3,10 @@ const options = {
   height: '100%',
   width: '100%',
   nodes: {
-    shape: 'circle',
+    shape: 'dot',
+    size:30,
     font: {
-      color: 'white',
+      color: 'black',
       size: 18
     }
   },

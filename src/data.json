@@ -2,9 +2,9 @@
   "services": [
     {
       "id": 1,
-      "label": "serviceA",
+      "label": "SA",
       "meta": {
-        "name": "",
+        "name": "Service A",
         "team": "",
         "tech-stack": "",
         "git-repo": "",
@@ -13,9 +13,9 @@
     },
     {
       "id": 2,
-      "label": "serviceB",
+      "label": "SB",
       "meta": {
-        "name": "",
+        "name": "Service B",
         "team": "",
         "tech-stack": "",
         "git-repo": "",
@@ -24,9 +24,9 @@
     },
     {
       "id": 3,
-      "label": "serviceC",
+      "label": "SC",
       "meta": {
-        "name": "",
+        "name": "Service C",
         "team": "",
         "tech-stack": "",
         "git-repo": "",
@@ -35,9 +35,9 @@
     },
     {
       "id": 4,
-      "label": "serviceD",
+      "label": "SD",
       "meta": {
-        "name": "",
+        "name": "Service D",
         "team": "",
         "tech-stack": "",
         "git-repo": "",
@@ -46,9 +46,174 @@
     },
     {
       "id": 5,
-      "label": "serviceE",
+      "label": "SE",
       "meta": {
-        "name": "",
+        "name": "Service E",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 6,
+      "label": "SF",
+      "meta": {
+        "name": "Service F",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 7,
+      "label": "SG",
+      "meta": {
+        "name": "Service G",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 8,
+      "label": "SH",
+      "meta": {
+        "name": "Service H",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 9,
+      "label": "SI",
+      "meta": {
+        "name": "Service I",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 10,
+      "label": "SJ",
+      "meta": {
+        "name": "Service J",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 11,
+      "label": "SK",
+      "meta": {
+        "name": "Service K",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 12,
+      "label": "SL",
+      "meta": {
+        "name": "Service L",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 13,
+      "label": "SM",
+      "meta": {
+        "name": "Service M",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 14,
+      "label": "SN",
+      "meta": {
+        "name": "Service N",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 15,
+      "label": "SO",
+      "meta": {
+        "name": "Service O",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 16,
+      "label": "SP",
+      "meta": {
+        "name": "Service P",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 17,
+      "label": "SQ",
+      "meta": {
+        "name": "Service Q",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 18,
+      "label": "SR",
+      "meta": {
+        "name": "Service R",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 19,
+      "label": "SS",
+      "meta": {
+        "name": "Service S",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 20,
+      "label": "ST",
+      "meta": {
+        "name": "Service T",
         "team": "",
         "tech-stack": "",
         "git-repo": "",
@@ -105,6 +270,168 @@
     {
       "consumer": 1,
       "provider": 5,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 1,
+      "provider": 2,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 5,
+      "provider": 6,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 4,
+      "provider": 7,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 8,
+      "provider": 3,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 9,
+      "provider": 2,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 1,
+      "provider": 10  ,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 11,
+      "provider": 12,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 11,
+      "provider": 15,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 11,
+      "provider": 13,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 12,
+      "provider": 13,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 14,
+      "provider": 15,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 11,
+      "provider": 15,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 15,
+      "provider": 16,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 14,
+      "provider": 17,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 18,
+      "provider": 13,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 19,
+      "provider": 12,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 11,
+      "provider": 20  ,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 10,
+      "provider": 20  ,
       "meta": {
         "path": "/api/path",
         "method": "GET",
