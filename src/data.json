@@ -1,0 +1,115 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "label": "serviceA",
+      "meta": {
+        "name": "",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 2,
+      "label": "serviceB",
+      "meta": {
+        "name": "",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 3,
+      "label": "serviceC",
+      "meta": {
+        "name": "",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 4,
+      "label": "serviceD",
+      "meta": {
+        "name": "",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    },
+    {
+      "id": 5,
+      "label": "serviceE",
+      "meta": {
+        "name": "",
+        "team": "",
+        "tech-stack": "",
+        "git-repo": "",
+        "external-systems": []
+      }
+    }
+  ],
+  "contracts": [
+    {
+      "consumer": 1,
+      "provider": 2,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 1,
+      "provider": 5,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 1,
+      "provider": 3,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 2,
+      "provider": 3,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 4,
+      "provider": 5,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    },
+    {
+      "consumer": 1,
+      "provider": 5,
+      "meta": {
+        "path": "/api/path",
+        "method": "GET",
+        "useCase": "this is used to get something"
+      }
+    }
+  ]
+}
